@@ -5,7 +5,7 @@ import Form from './Form'
 
 const App = () => {
 
-    const [theme, setTheme] = useState(themes.dark)
+    const [theme, setTheme] = useState(themes.ocean)
 
     return (
         <AppContext.Provider value={{theme}}>

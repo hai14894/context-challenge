@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import AppContext from './context'
 
 const ThemeButton = ({text}) => {
+    const appContext = useContext(AppContext)
     // This button should use the current theme
     return (
-        <button>{text}</button>
+        <button style={appContext.theme}>click me</button>
     )
 }
 
